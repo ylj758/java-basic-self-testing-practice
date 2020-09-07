@@ -17,7 +17,11 @@ class StringTest {
         //  Please modify the following line to pass the test. It is really easy to pass
         //  the test. But you have to tell why.
         // <--start
-        final boolean areSame = true;
+//        String replace(CharSequence target, CharSequence replacement)
+//        每个子串替换该字符串指定的文本替换序列靶序列匹配的文字。
+//        String实现了CharSequence接口
+
+        final boolean areSame = false;
         // --end-->
 
         assertEquals("The new string", modifiedString);
@@ -34,7 +38,10 @@ class StringTest {
         //  Please modify the following line to pass the test. It is really easy to pass
         //  the test. But you have to tell why.
         // <--start
-        final boolean areSame = true;
+//        String trim()
+//        返回一个字符串，它的值是字符串，任何前导和尾随空格删除。
+//        trim底层使用左右指针确定返回字符串长度，返回的是复制的字符串，调用Arrays.copyOfRange，并未删减原字符串
+        final boolean areSame = false;
         // --end-->
 
         assertEquals("The string with tailing space.", modifiedString);
@@ -52,7 +59,9 @@ class StringTest {
         //  Please modify the following line to pass the test. It is really easy to pass
         //  the test. But you have to tell why.
         // <--start
-        final boolean areSame = true;
+        final boolean areSame = false;
+//        ==：可以比较基本数据类型和引用类型，基本数据类型比较的是数值，
+//        在比较引用类型时，除了比较数值外，还要比较引用地址，两者都相等时，结果才是true
         // --end-->
 
         assertEquals("Part one. Part two.", originalString);
@@ -67,7 +76,7 @@ class StringTest {
 
         // TODO: Extract words in the sentence.
         // <--Start
-        String[] words = null;
+        String[] words = sentence.split(" ");
         // --End-->
 
         assertArrayEquals(new String[] {"This", "is", "Mike"}, words);
